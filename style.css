@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body nav {
+  background-color: white;
+  background-color: rgb(230, 250, 249);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0 10px 6px -6px #d0d0d0;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+body nav ul li a:hover {
+  color: rgb(110, 169, 251);
+}
+
+main section.main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section.main-area div.info {
+  flex-basis: 650px;
+}
+main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+main section.main-area div.info h2 {
+  font-size: 1rem;
+}
+main section.main-area div.info a {
+  color: white;
+  background-color: rgb(54, 212, 252);
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+main section.main-area div.info a:hover {
+  transform: scale(1.2);
+}
+main section.main-area img {
+  flex-basis: 300px;
+  max-width: 30vw;
+}
+main section.about-me {
+  background-color: rgb(213, 217, 255);
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.about-me div.desc {
+  text-align: center;
+}
+main section.about-me div.desc h2 {
+  font-size: 2rem;
+}
+main section.about-me div.progress-area p {
+  text-align: left;
+  margin: 0.5rem 0rem;
+}
+main section.about-me div.progress-area .progress-bar {
+  margin-top: 2rem;
+}
+main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+main section.resume section.table {
+  flex: 5 1 500px;
+  padding: 2rem;
+}
+main section.resume section.table table {
+  border-collapse: collapse;
+}
+main section.resume section.table table tr {
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+  transition: all 0.2s ease;
+}
+main section.resume section.table table tr:hover {
+  background-color: rgb(184, 222, 255);
+}
+main section.resume section.table table tr td {
+  padding: 1rem;
+}
+main section.resume section.table table tr td a {
+  text-decoration: none;
+}
+main section.resume section.picture {
+  flex: 1 1 500px;
+  position: relative;
+}
+main section.resume section.picture img {
+  width: 30vw;
+}
+main section.resume section.picture div.blue {
+  width: 30vw;
+  height: 30vw;
+  border: 10px solid rgb(110, 169, 251);
+  position: absolute;
+  top: -20px;
+  left: 60px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1100px) {
+  body main section.main-area div.info {
+    padding: 1rem;
+  }
+  body main section.main-area img {
+    width: 90%;
+  }
+  body main section.about-me {
+    padding: 1rem 0.5rem;
+  }
+  body main section.about-me div.desc {
+    width: 80%;
+  }
+  body main section.about-me div.progress-area {
+    width: 80%;
+  }
+  body main section.about-me section.resume section.table {
+    min-width: 800%;
+  }
+  body main section.about-me section.resume section.picture img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
